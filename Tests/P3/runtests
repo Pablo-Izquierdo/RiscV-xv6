@@ -1,0 +1,4 @@
+#!/bin/bash
+base=`dirname $0`
+python2 $base/project3.py --test-path $base $@ | tee runtests.log
+exit $?
