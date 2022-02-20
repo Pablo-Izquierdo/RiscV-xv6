@@ -1,0 +1,13 @@
+To run the tests:
+
+0. Boot vagrant image 
+1. Navigate to the base directory of your code
+2. From that directory, execute the "runtests" located in each directory ($LABHOME/Test/P[0..6]/), using the relative path of the script.
+3. The test will create a log file in the top or your directory. Add it to the repository in your master on $LABHOME/Results/P[0..6]/DNI and push it to gitlab. The score obtained will be the score of your assigment.
+
+In $LABHOME/Test/P[1..6]/{ctests,tests} you have the individual tests for each Lab. You can copy and test it 
+individually in your working dir for xv6, modifying the 'user/makefile.mk' or just copying 1 by 1 in 
+user/tester.c. Avoid to copy files and modify the makefile. The xv6 has a limitation of 8char in the filesystem, turning
+you testing a nighmare-
+
+For more options available while testing, run '$LABHOME/Test/P[0..6]/runtests -h'
