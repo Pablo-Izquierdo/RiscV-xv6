@@ -495,7 +495,7 @@ scheduler(void)
         // It should have changed its p->state before coming back.
         c->proc = 0;
       }
-      if (breakRoundRobin){
+      if (breakRoundRobin){ //Use KitKat method to get a more strict RoundRobin (designed by me)
         breakRoundRobin = false;
         release(&p->lock);
         break;
